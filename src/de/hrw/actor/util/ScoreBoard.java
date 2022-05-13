@@ -41,7 +41,7 @@ public class ScoreBoard extends Actor {
 	}
 
 	/**
-	 * Create a score board for the final result.
+	 * Create a score board for the final result. testtest
 	 */
 	public ScoreBoard(String title, String text, String prefix, int[] scores) {
 		int total = 0;
@@ -50,6 +50,7 @@ public class ScoreBoard extends Actor {
 		}
 		makeImage(title, text, prefix, total);
 		addMapScores(scores.length - 1, scores);
+		printResultToTerminal(title, scores);
 		printResultToTerminal(title, scores);
 	}
 
